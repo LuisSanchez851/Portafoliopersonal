@@ -1,4 +1,4 @@
-import { Moon, Sun, Code2 } from 'lucide-react';
+import { Moon, Sun, Code } from 'lucide-react';
 import { Button } from './ui/button';
 
 interface HeaderProps {
@@ -13,14 +13,17 @@ export function Header({ darkMode, setDarkMode, scrollToSection }: HeaderProps) 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo */}
-          <div className="flex items-center gap-2 sm:gap-3 group cursor-pointer">
-            <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-gradient-to-br from-blue-600 to-cyan-500 flex items-center justify-center shadow-lg shadow-blue-500/30 group-hover:shadow-blue-500/50 transition-all duration-300">
-              <Code2 className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
+          <button 
+            onClick={() => scrollToSection('sobre-mi')}
+            className="group flex items-center gap-2 hover:opacity-80 transition-opacity"
+          >
+            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-600 to-cyan-500 flex items-center justify-center shadow-lg">
+              <Code className="w-5 h-5 text-white" />
             </div>
-            <span className="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
-              Portafolio Personal
+            <span className="hidden sm:block bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
+              Portafolio LS
             </span>
-          </div>
+          </button>
 
           {/* Navigation Menu */}
           <nav className="hidden md:flex items-center gap-1 lg:gap-2">

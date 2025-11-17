@@ -833,10 +833,6 @@
     width: calc(var(--spacing) * 6);
   }
 
-  .w-8 {
-    width: calc(var(--spacing) * 8);
-  }
-
   .w-10 {
     width: calc(var(--spacing) * 10);
   }
@@ -1916,18 +1912,6 @@
   }
 
   @media (hover: hover) {
-    .group-hover\:shadow-blue-500\/50:is(:where(.group):hover *) {
-      --tw-shadow-color: color-mix(in srgb, oklch(.623 .214 259.815) 50%, transparent);
-    }
-
-    @supports (color: color-mix(in lab, red, red)) {
-      .group-hover\:shadow-blue-500\/50:is(:where(.group):hover *) {
-        --tw-shadow-color: color-mix(in oklab, color-mix(in oklab, var(--color-blue-500) 50%, transparent) var(--tw-shadow-alpha), transparent);
-      }
-    }
-  }
-
-  @media (hover: hover) {
     .group-hover\:duration-200:is(:where(.group):hover *) {
       --tw-duration: .2s;
       transition-duration: .2s;
@@ -2117,6 +2101,12 @@
   }
 
   @media (hover: hover) {
+    .hover\:opacity-80:hover {
+      opacity: .8;
+    }
+  }
+
+  @media (hover: hover) {
     .hover\:shadow-2xl:hover {
       --tw-shadow: 0 25px 50px -12px var(--tw-shadow-color, #00000040);
       box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
@@ -2225,14 +2215,14 @@
   }
 
   @media (width >= 40rem) {
-    .sm\:h-5 {
-      height: calc(var(--spacing) * 5);
+    .sm\:block {
+      display: block;
     }
   }
 
   @media (width >= 40rem) {
-    .sm\:h-10 {
-      height: calc(var(--spacing) * 10);
+    .sm\:h-5 {
+      height: calc(var(--spacing) * 5);
     }
   }
 
@@ -2255,20 +2245,8 @@
   }
 
   @media (width >= 40rem) {
-    .sm\:w-10 {
-      width: calc(var(--spacing) * 10);
-    }
-  }
-
-  @media (width >= 40rem) {
     .sm\:w-40 {
       width: calc(var(--spacing) * 40);
-    }
-  }
-
-  @media (width >= 40rem) {
-    .sm\:gap-3 {
-      gap: calc(var(--spacing) * 3);
     }
   }
 
