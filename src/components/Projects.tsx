@@ -10,40 +10,26 @@ export function Projects() {
 
   const projects = [
     {
-      title: 'Página Web Personal',
+      title: 'Portfolio Web V2',
       tag: 'Frontend',
-      tagColor: 'from-orange-500 to-red-500',
-      year: '2024',
-      description: 'Sitio web personal creado con HTML, CSS y JavaScript.',
-      image: 'https://images.unsplash.com/photo-1643116774075-acc00caa9a7b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBkZXZlbG9wbWVudCUyMGNvZGV8ZW58MXx8fHwxNzYzMzUwNzU4fDA&ixlib=rb-4.1.0&q=80&w=1080',
-      detailedDescription: 'Proyecto completo de desarrollo web que incluye diseño responsivo, animaciones CSS, y funcionalidades interactivas con JavaScript vanilla. Implementé mejores prácticas de SEO y accesibilidad web. El sitio cuenta con un diseño moderno y minimalista que refleja mi identidad profesional.',
-      technologies: ['HTML5', 'CSS3', 'JavaScript', 'Responsive Design'],
-      github: 'https://github.com/usuario/web-personal',
-      demo: 'https://ejemplo.com/demo'
-    },
-    {
-      title: 'Mini Portafolio Académico con IA',
-      tag: 'IA',
-      tagColor: 'from-purple-500 to-pink-500',
-      year: '2024',
-      description: 'Portafolio académico desarrollado con asistencia de herramientas de inteligencia artificial.',
-      image: 'https://images.unsplash.com/photo-1674027444485-cec3da58eef4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV0d29ya3xlbnwxfHx8fDE3NjMzMzcwMTN8MA&ixlib=rb-4.1.0&q=80&w=1080',
-      detailedDescription: 'Proyecto innovador que combina desarrollo web tradicional con herramientas de IA para optimizar el proceso de diseño y desarrollo. Utilicé asistentes de código basados en IA para acelerar la implementación y explorar diferentes enfoques de diseño. Este proyecto demuestra la importancia de integrar nuevas tecnologías en el flujo de trabajo moderno.',
-      technologies: ['React', 'TypeScript', 'AI Tools', 'Tailwind CSS'],
-      github: 'https://github.com/usuario/portafolio-ia',
-      demo: 'https://ejemplo.com/portafolio'
-    },
-    {
-      title: 'Trabajo Colaborativo Digital',
-      tag: 'Academia',
       tagColor: 'from-blue-500 to-cyan-500',
       year: '2024',
-      description: 'Plataforma colaborativa para gestión de proyectos académicos en equipo.',
-      image: 'https://images.unsplash.com/photo-1728933102332-a4f1a281a621?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWFtd29yayUyMGNvbGxhYm9yYXRpb24lMjBkaWdpdGFsfGVufDF8fHx8MTc2MzM1NTg3OHww&ixlib=rb-4.1.0&q=80&w=1080',
-      detailedDescription: 'Aplicación web colaborativa diseñada para facilitar el trabajo en equipo en proyectos académicos. Incluye funcionalidades de gestión de tareas, comunicación en tiempo real, y compartición de recursos. El proyecto enfatiza la importancia del trabajo colaborativo y las metodologías ágiles en el desarrollo de software.',
-      technologies: ['React', 'Node.js', 'WebSockets', 'MongoDB'],
-      github: 'https://github.com/usuario/colaborativo',
-      demo: 'https://ejemplo.com/colaborativo'
+      description: 'Prototipo de currículum y página web personal interactiva con diseño moderno y responsivo.',
+      image: 'https://images.unsplash.com/photo-1695634621375-0b66a9d5d1bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtaW5pbWFsJTIwcG9ydGZvbGlvJTIwd2Vic2l0ZXxlbnwxfHx8fDE3NjMzNTk2MjF8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+      detailedDescription: 'Proyecto de desarrollo web que funciona como página personal y currículum digital interactivo. Implementado con diseño responsivo y moderno, utilizando las mejores prácticas de desarrollo frontend. El sitio cuenta con secciones para presentación personal, habilidades, proyectos y datos de contacto, todo con un diseño limpio y profesional que facilita la navegación y presenta la información de manera efectiva.',
+      technologies: ['HTML5', 'CSS3', 'JavaScript', 'Responsive Design', 'UI/UX'],
+      github: 'https://github.com/LuisSanchez851/portfoliowebV2',
+    },
+    {
+      title: 'Commerce TechNova',
+      tag: 'E-commerce',
+      tagColor: 'from-purple-500 to-pink-500',
+      year: '2024',
+      description: 'Frontend de una plataforma de e-commerce especializada en productos tecnológicos con carrito de compras.',
+      image: 'https://images.unsplash.com/photo-1742836531239-1fe146bf7e3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjbGVhbiUyMHRlY2glMjBlY29tbWVyY2V8ZW58MXx8fHwxNzYzMzU5NjIyfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+      detailedDescription: 'Aplicación web de comercio electrónico enfocada en la venta de productos tecnológicos. El proyecto incluye catálogo de productos con filtros y búsqueda, carrito de compras funcional, gestión de productos, y una interfaz de usuario intuitiva y atractiva. Implementado con tecnologías modernas de frontend, el proyecto demuestra habilidades en desarrollo de interfaces comerciales, gestión de estado, y creación de experiencias de usuario fluidas y eficientes en plataformas de e-commerce.',
+      technologies: ['React', 'TypeScript', 'Tailwind CSS', 'State Management', 'Responsive Design'],
+      github: 'https://github.com/LuisSanchez851/commerceTechNova',
     },
   ];
 
@@ -156,16 +142,6 @@ export function Projects() {
                       <a href={project.github} target="_blank" rel="noopener noreferrer">
                         <Github className="w-4 h-4 mr-2" />
                         GitHub
-                      </a>
-                    </Button>
-                    <Button
-                      size="sm"
-                      className="flex-1 bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-700 hover:to-cyan-600 text-white"
-                      asChild
-                    >
-                      <a href={project.demo} target="_blank" rel="noopener noreferrer">
-                        <ExternalLink className="w-4 h-4 mr-2" />
-                        Demo
                       </a>
                     </Button>
                   </div>

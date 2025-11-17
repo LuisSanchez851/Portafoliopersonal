@@ -21,12 +21,12 @@ export function Skills() {
       description: 'Programación interactiva del lado del cliente'
     },
     {
-      name: 'Inteligencia Artificial',
-      level: 'Intermedio',
-      percentage: 70,
-      icon: Cpu,
+      name: 'Python',
+      level: 'Básico',
+      percentage: 45,
+      icon: Code,
       color: 'from-purple-500 to-pink-500',
-      description: 'Machine learning y aplicaciones IA'
+      description: 'Desarrollo backend y automatización'
     },
     {
       name: 'Comunicación',

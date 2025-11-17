@@ -6,19 +6,19 @@ export function Footer() {
   const socialLinks = [
     {
       icon: Mail,
-      href: 'mailto:ana.rodriguez@correo.com',
+      href: 'mailto:jrcas027@gmail.com',
       label: 'Email',
       color: 'hover:text-blue-500'
     },
     {
       icon: Linkedin,
-      href: 'https://linkedin.com/in/usuario',
+      href: 'https://www.linkedin.com/in/luis-s%C3%A1nchez-c-936b901b8',
       label: 'LinkedIn',
       color: 'hover:text-blue-600'
     },
     {
       icon: Github,
-      href: 'https://github.com/usuario',
+      href: 'https://github.com/LuisSanchez851',
       label: 'GitHub',
       color: 'hover:text-slate-700 dark:hover:text-white'
     },
@@ -35,7 +35,7 @@ export function Footer() {
                 <Code2 className="w-5 h-5 text-white" />
               </div>
               <span className="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
-                Ana María Rodríguez
+                Luis Alexander Sánchez
               </span>
             </div>
             <p className="text-sm text-slate-600 dark:text-slate-400">
@@ -60,6 +60,12 @@ export function Footer() {
                 className="text-sm text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
               >
                 Habilidades
+              </a>
+              <a
+                href="#experiencia"
+                className="text-sm text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+              >
+                Experiencia
               </a>
               <a
                 href="#proyectos"
@@ -105,7 +111,7 @@ export function Footer() {
         <div className="pt-8 border-t border-slate-200 dark:border-slate-800">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-sm text-slate-600 dark:text-slate-400 text-center md:text-left">
-              © {currentYear} Ana María Rodríguez García. Todos los derechos reservados.
+              © {currentYear} Luis Alexander Sánchez. Todos los derechos reservados.
             </p>
             <div className="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
               <span>Página creada con apoyo de herramientas de IA</span>

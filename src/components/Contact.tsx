@@ -68,30 +68,24 @@ export function Contact() {
   const contactInfo = [
     {
       icon: Mail,
-      label: 'Correo',
-      value: 'ana.rodriguez@correo.com',
-      href: 'mailto:ana.rodriguez@correo.com',
+      label: 'Email',
+      value: 'jrcas027@gmail.com',
+      href: 'mailto:jrcas027@gmail.com',
       color: 'from-blue-500 to-cyan-500'
-    },
-    {
-      icon: MapPin,
-      label: 'Ubicación',
-      value: 'Bogotá, Colombia',
-      color: 'from-green-500 to-emerald-500'
     },
     {
       icon: Linkedin,
       label: 'LinkedIn',
-      value: 'Ana Rodríguez',
-      href: 'https://linkedin.com/in/usuario',
-      color: 'from-blue-600 to-blue-500'
+      value: 'Luis Sánchez',
+      href: 'https://www.linkedin.com/in/luis-s%C3%A1nchez-c-936b901b8',
+      color: 'from-blue-600 to-blue-700'
     },
     {
       icon: Github,
       label: 'GitHub',
-      value: '@anarodriguez',
-      href: 'https://github.com/usuario',
-      color: 'from-slate-600 to-slate-500'
+      value: '@LuisSanchez851',
+      href: 'https://github.com/LuisSanchez851',
+      color: 'from-slate-700 to-slate-900'
     },
   ];
 

@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { ChevronDown, Sparkles, Brain, Code, Palette } from 'lucide-react';
 import { Button } from './ui/button';
 import { Badge } from './ui/badge';
-import { ImageWithFallback } from './figma/ImageWithFallback';
+import profileImage from 'figma:asset/bc66737a7637de29c0ef8075644a4f1870b8df10.png';
 
 interface HeroProps {
   scrollToSection: (id: string) => void;
@@ -12,7 +12,7 @@ export function Hero({ scrollToSection }: HeroProps) {
   const [expanded, setExpanded] = useState(false);
 
   const skills = [
-    { icon: Brain, label: 'IA', gradient: 'from-purple-500 to-pink-500' },
+    { icon: Brain, label: 'Liderazgo', gradient: 'from-purple-500 to-pink-500' },
     { icon: Code, label: 'HTML', gradient: 'from-orange-500 to-red-500' },
     { icon: Code, label: 'CSS', gradient: 'from-blue-500 to-cyan-500' },
     { icon: Code, label: 'JavaScript', gradient: 'from-yellow-500 to-amber-500' },
@@ -35,8 +35,8 @@ export function Hero({ scrollToSection }: HeroProps) {
             <div className="relative group">
               <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-600 rounded-full blur-lg opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
               <div className="relative w-32 h-32 sm:w-40 sm:h-40 lg:w-48 lg:h-48 rounded-full overflow-hidden ring-4 ring-white dark:ring-slate-900 shadow-2xl">
-                <ImageWithFallback
-                  src="https://images.unsplash.com/photo-1616161560899-c35ec754ef6d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdCUyMHN0dWRlbnQlMjB0ZWNobm9sb2d5fGVufDF8fHx8MTc2MzM1NTg3N3ww&ixlib=rb-4.1.0&q=80&w=1080"
+                <img
+                  src={profileImage}
                   alt="Foto de perfil"
                   className="w-full h-full object-cover"
                 />
@@ -49,31 +49,28 @@ export function Hero({ scrollToSection }: HeroProps) {
             <h1 className="text-slate-900 dark:text-white">
               <span className="block text-lg sm:text-xl text-slate-600 dark:text-slate-400 mb-2">Hola, soy</span>
               <span className="block bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-600 bg-clip-text text-transparent animate-gradient bg-[length:200%_auto]">
-                Ana María Rodríguez García
+                Luis Alexander Sánchez
               </span>
             </h1>
-            <p className="text-slate-700 dark:text-slate-300 max-w-2xl mx-auto">
-              Estudiante de Inteligencia Artificial y Desarrollo Web
-            </p>
           </div>
 
           {/* Bio */}
           <div className="max-w-3xl mx-auto">
-            <p className="text-slate-600 dark:text-slate-400">
-              Estudiante de tecnología e inteligencia artificial, apasionada por el desarrollo web y la creación de soluciones digitales innovadoras. Me encanta aprender nuevas tecnologías y aplicarlas en proyectos creativos.
+            <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
+              Soy estudiante de sexto semestre de Ingeniería de Software en Uniempresarial, con experiencia en el desarrollo de soluciones tecnológicas tanto para empresas grandes como pequeñas. He trabajado con herramientas low-code como WordPress, Bubble, WeWeb, Mendix y Oracle APEX, además de contar con habilidades en desarrollo tradicional utilizando Python, JavaScript y TypeScript con Node.js. Manejo frameworks modernos como Next.js para frontend y backend, aplicando buenas prácticas de arquitectura y trabajo colaborativo. Me caracterizo por mi capacidad para aprender rápidamente, adaptarme a distintos entornos tecnológicos y aportar soluciones innovadoras orientadas a la eficiencia y la calidad del software.
             </p>
             
             {expanded && (
               <div className="mt-6 p-6 bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-950/30 dark:to-cyan-950/30 rounded-2xl border border-blue-200 dark:border-blue-800 shadow-lg backdrop-blur-sm space-y-4 animate-in fade-in slide-in-from-top-4 duration-500">
-                <p className="text-slate-700 dark:text-slate-300">
-                  Actualmente, me especializo en combinar mis conocimientos de programación con inteligencia artificial para crear experiencias web únicas. Mi enfoque está en desarrollar habilidades tanto técnicas como creativas, manteniéndome siempre actualizada con las últimas tendencias tecnológicas.
+                <p className="text-slate-700 dark:text-slate-300 leading-relaxed">
+                  Mi experiencia profesional incluye la implementación de soluciones digitales escalables y mantenibles, siempre priorizando las necesidades del cliente y del usuario final. He participado en proyectos que van desde pequeñas automatizaciones hasta sistemas empresariales completos, donde he podido aplicar tanto herramientas de desarrollo rápido como metodologías de programación más tradicionales.
                 </p>
-                <p className="text-slate-700 dark:text-slate-300">
-                  Además del desarrollo técnico, valoro mucho el trabajo en equipo y la comunicación efectiva. Creo que las mejores soluciones surgen de la colaboración y el intercambio de ideas. Mi objetivo es seguir creciendo profesionalmente mientras contribuyo a proyectos que generen un impacto positivo.
+                <p className="text-slate-700 dark:text-slate-300 leading-relaxed">
+                  Mi filosofía de trabajo se basa en la mejora continua y el aprendizaje constante. Disfruto enfrentando desafíos técnicos complejos y encontrando la mejor solución posible, siempre considerando factores como rendimiento, seguridad y experiencia de usuario. Además, valoro enormemente el trabajo en equipo y la comunicación clara, elementos que considero fundamentales para el éxito de cualquier proyecto.
                 </p>
                 <div className="flex items-center gap-2 text-sm text-blue-600 dark:text-blue-400">
                   <Sparkles className="w-4 h-4" />
-                  <span>Siempre en búsqueda de nuevos desafíos y oportunidades de aprendizaje</span>
+                  <span>Comprometido con la excelencia técnica y la innovación continua</span>
                 </div>
               </div>
             )}

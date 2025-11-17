@@ -3,6 +3,7 @@ import { Moon, Sun } from 'lucide-react';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { Skills } from './components/Skills';
+import { WorkExperience } from './components/WorkExperience';
 import { Projects } from './components/Projects';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
@@ -29,6 +30,7 @@ export default function App() {
         <main>
           <Hero scrollToSection={scrollToSection} />
           <Skills />
+          <WorkExperience />
           <Projects />
           <Contact />
         </main>

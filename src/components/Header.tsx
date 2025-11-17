@@ -40,6 +40,13 @@ export function Header({ darkMode, setDarkMode, scrollToSection }: HeaderProps) 
             </Button>
             <Button 
               variant="ghost" 
+              onClick={() => scrollToSection('experiencia')}
+              className="hover:bg-blue-100 dark:hover:bg-blue-950/50 text-slate-700 dark:text-slate-300"
+            >
+              Experiencia
+            </Button>
+            <Button 
+              variant="ghost" 
               onClick={() => scrollToSection('proyectos')}
               className="hover:bg-blue-100 dark:hover:bg-blue-950/50 text-slate-700 dark:text-slate-300"
             >
